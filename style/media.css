@@ -1,0 +1,95 @@
+@media(max-width: 1300px) {
+    .circle4, .cube1, .cube2 {
+        display: none;
+    }
+    .works__bg, .front__bg {
+        /* max-width: 100%; */
+        width: 100%;
+    }
+}
+@media(max-width: 991px) {
+    .header__link {
+        margin: 15px 0;
+    }
+    .circle, .cube, .works__bg, .front__bg {
+        display: none;
+    }
+}
+@media(max-width: 575px) {
+    .works__headline {
+        margin-bottom: 15px;
+    }
+    .works__list {
+        font-size: 16px;
+        text-align: justify;
+    }
+    .works__list li:first-of-type {
+        margin-bottom: 15px;
+    }
+    .works {
+        margin-bottom: 120px;
+    }
+}
+@media(max-width: 475px) {
+    .slider__desc {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .front__label {
+        padding-top: 13px;
+        padding-bottom: 12px;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+    }
+    .front-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .front-list {
+        font-size: 16px;
+    }
+    .front-list li:first-of-type {
+        margin-bottom: 15px;
+    }
+    .front-btn {
+        margin-left: 0;
+    }
+    .footer__link {
+        font-size: 20px;
+    }
+}
+
+
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        --whiteColor: #151437;
+        --blackColor: #FFFFFF;
+        --violetColor: #7177F1;
+    }
+    .slider__btn, 
+    .front-btn,
+    .works__btn,
+    .footer__link,
+    .header__order{
+        color: var(--blackColor) !important;
+    }
+    .carousel-indicators button {
+        background: var(--blackColor) !important;
+    }
+    .front__label {
+        color: var(--blackColor) !important;
+        background: var(--violetColor) !important;
+    }
+    .front__five {
+        color: var(--blackColor) !important;
+    }
+    .accordion-button {
+        background: var(--whiteColor) !important;
+    }
+    .accordion-button:not(.collapsed), .accordion-button:not(.collapsed)::after, .accordion-body {
+        color: var(--blackColor) !important;
+    }
+}
